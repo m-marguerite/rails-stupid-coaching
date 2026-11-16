@@ -1,0 +1,21 @@
+<h1 class="text-bg-dark p-3">Voila ta réponse : réponse.</h1>
+
+<div class="text-bg-primary m-2 p-3 shadow p-3 mb-3 rounded">
+  <blockquote class="blockquote">
+  <p>
+    <%= @questions %>
+  </p>
+  </blockquote>
+  <p>— <cite>You</cite></p>
+</div>
+
+<div class="text-bg-primary m-2 p-3 shadow p-3 mb-3 rounded">
+  <blockquote class="blockquote">
+  <p>
+    <%= @answer %>
+  </p>
+  </blockquote>
+  <p>— <cite>Your coach</cite></p>
+</div>
+
+<%= link_to "Ask a new question", ask_path %>
